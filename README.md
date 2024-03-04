@@ -20,9 +20,10 @@ To use Flexi Tab Bar in your Flutter project, add the following dependency to yo
 ```yaml
 dependencies:
   flexi_tab_bar: ^0.0.1
+  ```
 
-
-Usage
+## Usage
+```dart
 
 import 'package:flexi_tab_bar/flexi_tab_bar.dart';
 
@@ -35,3 +36,4 @@ FlexiTabBar(
     pageController: PageController(),
   ),
 );
+```
