@@ -1,39 +1,22 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Flexi Tab Bar
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A flexible and customizable tab bar widget for Flutter.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Overview
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Flexi Tab Bar provides a versatile tab bar solution for Flutter applications, allowing developers to easily create tabbed interfaces with custom styling and functionality.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Supports dynamic tab titles and views.
+- Customizable tab bar decoration including height, margin, and text styles.
+- Smooth tab switching animations with customizable duration.
+- Easy-to-use API for integrating tab bar functionality into your Flutter apps.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use Flexi Tab Bar in your Flutter project, add the following dependency to your `pubspec.yaml` file:
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```yaml
+dependencies:
+  flexi_tab_bar: ^0.0.1
