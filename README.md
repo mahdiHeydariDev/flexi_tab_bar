@@ -31,7 +31,7 @@ import 'package:flexi_tab_bar/flexi_tab_bar.dart';
 FlexiTabBar(
   flexiTabBarConfig: FlexiTabBarConfig(
     titles: ['Tab 1', 'Tab 2', 'Tab 3'],
-    views: [TabView1(), TabView2(), TabView3()],
+    views: [Container(color:Colors.red), Container(color:Colors.yellow),Container(color:Colors.blue),],
     initialPage: 0,
     pageController: PageController(),
   ),
