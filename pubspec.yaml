@@ -1,7 +1,8 @@
 name: flexi_tab_bar
-description: A new Flutter package project.
+description: A flexible and customizable tab bar for Flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/mahdiHeydariDev/flexi_tab_bar
+
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
