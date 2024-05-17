@@ -38,6 +38,9 @@ class FlexiTabBarDecoration {
   /// Decoration for the tab bar.
   final BoxDecoration? tabBarDecoration;
 
+  ///Decoration for the active tab
+  final BoxDecoration? activeTabBoxDecoration;
+
   /// Height of the tab bar.
   final double? height;
 
@@ -75,6 +78,7 @@ class FlexiTabBarDecoration {
   /// [tabBarActiveColor] sets the color for the active tab indicator.
   ///
   /// [animationDuration] determines the duration for tab switching animations.
+  /// [activeTabBoxDecoration]  allows customization of the active tab bar's appearance.
   FlexiTabBarDecoration({
     this.tabBarDecoration,
     required this.pageController,
@@ -84,6 +88,7 @@ class FlexiTabBarDecoration {
     this.inactiveLabelTextStyle,
     this.tabBarActiveColor,
     this.animationDuration,
+    this.activeTabBoxDecoration,
   });
 }
 
@@ -155,10 +160,15 @@ class _FlexiTabBarState extends State<FlexiTabBar> {
                               milliseconds: 400,
                             ),
                         curve: Curves.linear,
-                        decoration: BoxDecoration(
-                          color: currentPage == i ? widget.flexiTabBarDecoration?.tabBarActiveColor ?? const Color(0xff00639B) : Colors.transparent,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
+                        decoration:
+                            currentPage == i && widget.flexiTabBarDecoration != null && widget.flexiTabBarDecoration!.activeTabBoxDecoration != null
+                                ? widget.flexiTabBarDecoration!.activeTabBoxDecoration!
+                                : BoxDecoration(
+                                    color: currentPage == i
+                                        ? widget.flexiTabBarDecoration?.tabBarActiveColor ?? const Color(0xff00639B)
+                                        : Colors.transparent,
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
                         child: Center(
                           child: Text(
                             widget.flexiTabBarConfig.titles[i],
